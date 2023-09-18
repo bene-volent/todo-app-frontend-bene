@@ -288,11 +288,7 @@ html.dark .app-task-submit {
 }
 html.dark .app-task {
   border-bottom: 1px solid var(--dtheme-Very-Dark-Grayish-Blue);
-}
-@media (width > ) {
-  .app-task {
-    color: var(--dtheme-Light-Grayish-Blue);
-  }
+  color: var(--dtheme-Light-Grayish-Blue);
 }
 @media (width > 768px) {
   .app-task:hover .app-task-remove {
