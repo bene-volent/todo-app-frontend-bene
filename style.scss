@@ -352,11 +352,11 @@ main {
 
         @include dark() {
             border-bottom: 1px solid var(--dtheme-Very-Dark-Grayish-Blue);
+            color: var(--dtheme-Light-Grayish-Blue);
+
         }
 
-        @include mq(dark) {
-            color: var(--dtheme-Light-Grayish-Blue);
-        }
+        
 
         @include mq() {
             &:hover &-remove {
