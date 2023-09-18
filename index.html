@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="app-header">
+
+      <div class="container">
+        <h1 class="app-heading">TODO</h1>
+        <button type="button" class="app-theme-toggler" title="Theme Toggler">
+          <svg class="light-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="1em" height="1em">
+            <path fill="#FFF" fill-rule="evenodd"
+              d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z" />
+          </svg>
+          <svg class="dark-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="1em" height="1em">
+            <path fill="#FFF" fill-rule="evenodd"
+              d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="app-inputs">
+      <div class="container">
+        <form class="app-task-form"><button type="submit" class="app-task-submit" id="app-task-submit"><span
+              class="sr-only">Save
+              task</span></button>
+          <input type="text" name="task" class="app-task-input" id="app-task-input" placeholder="Create a new todo..." required autocomplete="off" >
+        </form>
+      </div>
+    </section>
+
+    <section class="app-tasks-container">
+      <div class="container">
+        <div class="app-tasks-wrapper">
+          <ul class="app-tasks">
+
+          </ul>
+          <div class="app-tasks-extras">
+            <p class="app-tasks-number"><span class="app-tasks-count">0</span> items left</p>
+            <div class="app-tasks-buttons app-tasks-buttons-main">
+              <button type="button" class="app-tasks-button" data-active="true" data-task="show-all">All</button>
+              <button type="button" class="app-tasks-button" data-active="false" data-task="show-active">Active</button>
+              <button type="button" class="app-tasks-button" data-active="false"
+                data-task="show-completed">Completed</button>
+            </div>
+            <button class="app-tasks-button" data-task="clear">Clear Completed</button>
+          </div>
+        </div>
+        <div class="app-tasks-buttons app-tasks-buttons-secondary">
+          <button type="button" class="app-tasks-button" data-active="true" data-task="show-all">All</button>
+          <button type="button" class="app-tasks-button" data-active="false" data-task="show-active">Active</button>
+          <button type="button" class="app-tasks-button" data-active="false"
+            data-task="show-completed">Completed</button>
+        </div>
+        <p class="app-footnote">Drag and drop to reorder list</p>
+      </div>
+
+    </section>
+
+
+
+  </main>
+  <!-- 
+  Todo
+
+  [Dynamic Number] items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
